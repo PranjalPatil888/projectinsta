@@ -1,0 +1,25 @@
+Jenkins assignment:
+
+Task 1:
+
+1. Clone this github repo : https://github.com/ExlearnTechnologies/Hello-World-SpringBoot.git
+2. Create a repo in your GitHub account and Push the code to your repo.
+3. Create a Freestyle Build Job, Test Job, Package Job and Deploy Job.
+4. Connect these jobs using post build actions (Upstream and Downstream)
+5. Configure Build job and trigger it periodically
+6. Set the cron to trigger the job every 15 minutes ( visit Cronguru if you are not sure on setting the cron for every 15 minutes)
+7. Let the Build job get triggered automatically and see if the downstream jobs are getting triggered automatically. 
+
+If the jobs don't get triggered automatically then you must have made some mistake, so please go through session recordings.
+
+Task 2:
+
+1. Use the same repo as above
+2. This time create a pipeline job.
+3. Write a pipeline script which has 5 stages, i.e. clone, compile, test, package and deploy 
+(Don't use the same script which you will find in repo. In the repo script we have given the git command in every stage, but here we want you to create a separate stage for git clone at the beginning. In rest of the stages remove git command and keep only mvn commands.
+
+4. Paste the script in pipeline script and build the job
+5. Next push this script to Github repo. Name the file as Jenkinsfile
+6. Now configure the pipeline job to use pipeline script from SCM.
+7. Trigger the job. This time it should pick the script from your repo.
